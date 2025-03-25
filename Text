@@ -1,0 +1,26 @@
+import time
+
+lines = [
+    "You wake up in a dark forest...",
+    "You feel a trickle of blood run down your forehead,",
+    "you wince in pain as you feel the open wound...",
+    "You notice two paths laid out before you.",
+    "The left path will take you to the mountains,",
+    "the right path will take you deeper into the forest..."]
+for line in lines:
+    print(line)
+    time.sleep(2.5)
+
+choice = input("Which path would you like to take? 'left' or 'right'")
+if choice == "left":
+    print("You start walking towards the mountains, a chill takes over you as you gaze upon it's peak.")
+
+elif choice == "right":
+    print("You walk carefully into the darkness of the forest, you feel as if something is lurking in the blackness of the unknown.")
+    time.sleep(1)
+    turnback = input("Turn back? 'yes' or 'no'")
+if turnback == "yes":
+    print("You trust your instincts, the darkness seems to whisper as you run back where you awoke.")
+
+else:
+    print("You decided to stay put. Rescue doesn't come. You slowly fade into the wamrth that overtakes you. You died.")
